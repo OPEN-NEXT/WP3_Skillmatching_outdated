@@ -15,7 +15,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/konierik/ontologies/2021/Skills/1.0.0</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>Ontology issues:
@@ -232,9 +231,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <ObjectProperty IRI="#describes_project"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#document_implies_skill"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#documentation_release"/>
     </Declaration>
     <Declaration>
@@ -424,9 +420,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <NamedIndividual IRI="#Merge_and_deploy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Peter"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Pull_request"/>
     </Declaration>
     <Declaration>
@@ -446,9 +439,6 @@ Skill and Task assignment ex ante and ex post</Literal>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Task_validation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UnknownDocument"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#.art"/>
@@ -499,10 +489,6 @@ Skill and Task assignment ex ante and ex post</Literal>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#DesignSkill"/>
-        <Class IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#DesignSkill"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#DesignSkill"/>
         <ObjectOneOf>
             <NamedIndividual IRI="#DesignSkill"/>
         </ObjectOneOf>
@@ -534,10 +520,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Skill"/>
-        <Class IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#Skill"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#author_of"/>
             <ObjectSomeValuesFrom>
@@ -551,48 +533,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <ObjectHasValue>
             <ObjectProperty IRI="#has_skill"/>
             <NamedIndividual IRI="#DesignSkill"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#author_of"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#stored_format"/>
-                <ObjectHasValue>
-                    <ObjectProperty IRI="#data_implies_skill"/>
-                    <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#ProjectManagement"/>
-                </ObjectHasValue>
-            </ObjectSomeValuesFrom>
-        </ObjectSomeValuesFrom>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#has_skill"/>
-            <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#ProjectManagement"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#author_of"/>
-            <ObjectHasValue>
-                <ObjectProperty IRI="#document_implies_skill"/>
-                <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#DesignSkill"/>
-            </ObjectHasValue>
-        </ObjectSomeValuesFrom>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#has_skill"/>
-            <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#DesignSkill"/>
-        </ObjectHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#author_of"/>
-            <ObjectHasValue>
-                <ObjectProperty IRI="#document_implies_skill"/>
-                <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#ProjectManagement"/>
-            </ObjectHasValue>
-        </ObjectSomeValuesFrom>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#has_skill"/>
-            <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#ProjectManagement"/>
         </ObjectHasValue>
     </EquivalentClasses>
     <SubClassOf>
@@ -711,6 +651,25 @@ Skill and Task assignment ex ante and ex post</Literal>
         <Class IRI="#PLC_phase"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#Contribution"/>
+        <Class IRI="#Contribution_process_phase"/>
+        <Class IRI="#Data_format"/>
+        <Class IRI="#Document"/>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#OSPD_process_phase"/>
+        <Class IRI="#PLC_phase"/>
+        <Class IRI="#Product_artefact"/>
+        <Class IRI="#Project"/>
+        <Class IRI="#Project_team"/>
+        <Class IRI="#Release"/>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#Requirement_definition_process_phase"/>
+        <Class IRI="#Role"/>
+        <Class IRI="#Skill"/>
+        <Class IRI="#Task"/>
+        <Class IRI="#Input/Ideas"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Person"/>
         <Class IRI="#Project"/>
     </DisjointClasses>
@@ -747,10 +706,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <NamedIndividual IRI="#Merge_and_deploy"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Peter"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Contribution_process_phase"/>
         <NamedIndividual IRI="#Pull_request"/>
     </ClassAssertion>
@@ -777,10 +732,6 @@ Skill and Task assignment ex ante and ex post</Literal>
     <ClassAssertion>
         <Class IRI="#OSPD_process_phase"/>
         <NamedIndividual IRI="#Task_validation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Document"/>
-        <NamedIndividual IRI="#UnknownDocument"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#MCAD_format"/>
@@ -853,11 +804,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <NamedIndividual IRI="#Task_validation"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#document_implies_skill"/>
-        <NamedIndividual IRI="#Issues"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#ProjectManagement"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#stored_format"/>
         <NamedIndividual IRI="#Issues"/>
         <NamedIndividual IRI="#.xls"/>
@@ -866,11 +812,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <ObjectProperty IRI="#Contribution_process_successor"/>
         <NamedIndividual IRI="#Merge_and_deploy"/>
         <NamedIndividual IRI="#Review"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#author_of"/>
-        <NamedIndividual IRI="#Peter"/>
-        <NamedIndividual IRI="#UnknownDocument"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#Contribution_process_predecessor"/>
@@ -936,11 +877,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <ObjectProperty IRI="#OSPD_process_successor"/>
         <NamedIndividual IRI="#Task_validation"/>
         <NamedIndividual IRI="#Task_contribution"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#document_implies_skill"/>
-        <NamedIndividual IRI="#UnknownDocument"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#DesignSkill"/>
     </ObjectPropertyAssertion>
     <NegativeObjectPropertyAssertion>
         <ObjectProperty IRI="#OSPD_process_predecessor"/>
@@ -1304,10 +1240,6 @@ Skill and Task assignment ex ante and ex post</Literal>
         <Class IRI="#Documentation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#document_implies_skill"/>
-        <Class IRI="#Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#documentation_release"/>
         <Class IRI="#Documentation"/>
     </ObjectPropertyDomain>
@@ -1511,10 +1443,6 @@ Skill and Task assignment ex ante and ex post</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#describes_project"/>
         <Class IRI="#Project"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#document_implies_skill"/>
-        <Class IRI="http://www.semanticweb.org/konierik/ontologies/2021/Skills#Skill"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#documentation_release"/>
@@ -2062,5 +1990,5 @@ In strict terms a documentation is a bundle of diverse documents, comparable to 
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
 
