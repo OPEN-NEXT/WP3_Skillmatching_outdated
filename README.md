@@ -9,7 +9,7 @@
 
 ## **USER STORIES (US)**
 
-- Two main US are scope of the case: <br>
+Two main US are scope of the case: <br>
  1. I, as a user of some OSH management platform, am interested in learning some skill (or want to help and can provide a certain skill) and want to find projects with issues where this is addressed. <br>
  2. I, as project manager/member, need help to do a task requirering a certain skill and want to find people to help me or do the task. 
 
@@ -40,7 +40,7 @@ For customization reasons, the ontology model consists of three ontologies refer
    - The file refers to and uses class and property expressions from the other two ontologies.
 
 ## ONTOLOGY RESTRICTIONS
-- Based on the US, prevalidation workshops were held. The results specified the scope and functionality that is to be implemented:<br>
+Based on the US, prevalidation workshops were held. The results specified the scope and functionality that is to be implemented:<br>
   - I, as a person/user/contributor, add my skills to my profile to show others
   - I recieve notifications of invitations/open calls matching my skills
   - I recieve notifications or suggestions for projects with people with whom I have already worked on. <br> This specifically does not contain to the skill matching focus but is often mentioned. This interpreted indicates a need for priorisation of the skill matching (e.g. a first suggestions for a match will be from the circle of acquaintances rather than the whole community).
@@ -51,5 +51,5 @@ For customization reasons, the ontology model consists of three ontologies refer
 - If you want to use them locally, do not forget to rereference them by chaning their namespaces to the new location (file path or URL).
 
 ## **CODE**
-- Code to handle, instantiate, query and reason the ontology model is in development (in coordination with other project parties) and will be uploaded soon.
+Code to handle, instantiate, query and reason the ontology model is in development (in coordination with other project parties) and will be uploaded soon.
 
