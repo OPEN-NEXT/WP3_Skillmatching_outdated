@@ -11,7 +11,7 @@
 
 Two main US are scope of the case: <br>
  1. I, as a user of some OSH management platform, am interested in learning some skill (or want to help and can provide a certain skill) and want to find projects with issues where this is addressed. <br>
- 2. I, as project manager/member, need help to do a task requirering a certain skill and want to find people to help me or do the task. 
+ 2. I, as project manager/member, need help to do a task requiring a certain skill and want to find people to help me or do the task. 
 
 ## **CURRENT STATUS**
 
