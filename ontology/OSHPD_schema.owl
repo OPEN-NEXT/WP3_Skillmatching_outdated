@@ -18,7 +18,6 @@
     <Prefix name="oshpd" IRI="https://github.com/OPEN-NEXT/WP3_Skillmatching/raw/main/ontology/OSHPD_schema.owl#"/>
     <Prefix name="skills" IRI="https://github.com/OPEN-NEXT/WP3_Skillmatching/raw/main/ontology/skills.owl#"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="wikifactory" IRI="https://wikifactory.com/api/graphgl/"/>
     <Import>https://github.com/OPEN-NEXT/WP3_Skillmatching/raw/main/ontology/skills.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -27,6 +26,14 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:created"/>
         <Literal>2021-04-28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal>GNU General Public License v3.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal>2021-05-19</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -531,16 +538,19 @@
         <AnnotationProperty abbreviatedIRI="dcterms:created"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#json-mapping-class"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="wikifactory:class-mapping"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="wikifactory:dataproperty-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_classmapping"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="wikifactory:objectproperty-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_datatpropertymapping"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#wikifactory_objectpropertymapping"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#CAD_document"/>
@@ -1949,22 +1959,17 @@
 Bonvoisin et al. (2018). &quot;How participative is open source hardware? Insights from online repository mining&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Contribution</IRI>
-        <Literal>Comment</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="wikifactory:class-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_classmapping"/>
         <IRI>#Contribution</IRI>
         <Literal>data/project/result/contributions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="wikifactory:objectproperty-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_objectpropertymapping"/>
         <IRI>#Contribution</IRI>
         <Literal>data/project</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="wikifactory:dataproperty-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_datatpropertymapping"/>
         <IRI>#Contribution_id</IRI>
         <Literal>data/project/result/contributions/edges/node/id</Literal>
     </AnnotationAssertion>
@@ -1974,7 +1979,7 @@ Bonvoisin et al. (2018). &quot;How participative is open source hardware? Insigh
         <Literal>same considerations as for PLC_phase --&gt; have a look there</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="wikifactory:dataproperty-mapping"/>
+        <AnnotationProperty IRI="#wikifactory_datatpropertymapping"/>
         <IRI>#Contribution_title</IRI>
         <Literal>data/project/result/contributions/edges/node/title</Literal>
     </AnnotationAssertion>
