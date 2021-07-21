@@ -1,6 +1,7 @@
 # Semantic skillmatching in Open Source Hardware (OSH) Project Communites
 
 - This repository handles the third workpackage (WP3) of the [OPEN!NEXT project](https://opennext.eu/) to serve possible solutions for Open Source Hardware Commmunity needs.
+- OPEN!NEXT received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 869984.
 - Skillmatching as a measure of community management was identified, which is the main focus here.\
   For this, a generic ontology model of a possible open souce hardware project landscape was developed.\
   The implementation of the ontology took results from a previous project (OPEN!) into account that also analysed processes and dynamics of OSH community.
